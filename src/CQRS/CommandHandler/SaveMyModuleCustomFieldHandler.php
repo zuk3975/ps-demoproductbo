@@ -41,7 +41,7 @@ final class SaveMyModuleCustomFieldHandler
      *
      * Note - product form data handler create() method is a little unique
      * @see ProductFormDataHandler::create()
-     * 
+     *
      * It will create the product with couple required fields and then call the update method,
      * so you don't actually need to hook on ProductFormDataHandler::create() method
      *
@@ -50,6 +50,6 @@ final class SaveMyModuleCustomFieldHandler
     public function handle(SaveMyModuleCustomFieldCommand $command): void
     {
         // do what you need with your command here. For example we are saving it to configuration
-        $this->configuration->set('DEMOPRODUCTFORM_CUSTOM_FIELD', $command->getValue());
+        $this->configuration->set('DEMO_MODULE_CUSTOM_FIELD', $command->getValue());
     }
 }
